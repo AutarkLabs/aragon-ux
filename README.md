@@ -32,14 +32,14 @@ where `voting` is the instance of the voting app I have installed into my DAO
 * The optimal Voting UX is you have one "Voting" app in the left-panel, and within the app you have an initial "Dashboard" tab that displays all open votes (of all vote types), and then expanded views for each type that lists a comprehensive list. The information architecture may be as follows -- and knowing this information across all of your DAOs would even be better. 
 ![daoing](/images/daoing.png) 
 
-## 8. Ability to have “recipient” dropdowns that autocomplete a human-readbale name.
+## 8. Ability to have “recipient” dropdowns that autocomplete a human-readbale name
 * While progress has been made on identity providers (https://forum.aragon.org/t/identity-providers-resolving-addresses-to-identities-in-aragon/631), I do not see this initiative as complete until we can resolve how to resolve the the identities in recipient dropdowns. I imagine this will require an additional component like `RecipientAutocomplete` instead of `DropDown` which has logic that interfaces with the Identity Provider API.
 
-## 9. Ability to connect two or more external or internal actions that when done, can perform an intent in a DAO.
+## 9. Ability to connect two or more external or internal actions that when done, can perform an intent in a DAO
 * E.g. a person sends money to a contract and automatically gets minted a membership token to a DAO (supports subscription based DAOs). This is one example - many other use cases for triggers.
 * Related topic: https://forum.aragon.org/t/aragon-triggers-enhanced-forwarding-interface-for-improved-composability/451
 
-## 10. Ability to display pending actions which were forward from `App A` into `App B`, but have not yet been executed. 
+## 10. Ability to display pending actions which were forward from `App A` into `App B`, but have not yet been executed 
 * Brett's words from related topic [https://forum.aragon.org/t/showing-pending-forwarded-actions-in-apps/709]: They go to an app, decide on an action, and sign a transaction (containing that action’s intent) that eventually gets mined. Afterwards they’re left in the dark, because they’ve received no feedback about what happened after and if they need to do anything (unless the intent was *synchronously* successful, e.g. the sender was the only possible voter in the entire organization). 
 * There are many use cases for this: Finance app sending transfers, Token manager minting tokens, Allocations app proposing allocations, Permissions app upgrading permissions etc -- any app that is managed by a Voting-like app, essentially.
 
