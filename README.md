@@ -1,5 +1,5 @@
 # aragon-ux
-Feature requests to enhance Aragon's UX
+Feature requests to enhance Aragon's UX. The features below are not ranked in any particular order at the moment -- the numbers have been added for easy reference.
 
 
 ## 1. Ability to manage global metadata, on a DAO by DAO basis, and share this metadata across a DAO's apps
