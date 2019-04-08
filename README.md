@@ -30,7 +30,7 @@ where `voting` is the instance of the voting app I have installed into my DAO
 * This can add limitations to develop more complex applications. For example, it may be a more optimal experience to deploy `App A` which has one contract, and then enable `module B` within the app that provides additional functionality and whose logic is maintained in a separate contract (e.g. a user enable the Issue Curation module within the Projects app). 
 * The current sandboxing approach leads towards an anti-pattern and doesn’t enable DRY application development across the ecosystem. For example, Pando may want to plug-in an Issue Curation module instead of up taking our entire Projects smart contract or rewriting that functionality within their contracts.
 * The optimal Voting UX is you have one "Voting" app in the left-panel, and within the app you have an initial "Dashboard" tab that displays all open votes (of all vote types), and then expanded views for each type that lists a comprehensive list. The information architecture may be as follows -- and knowing this information across all of your DAOs would even be better. 
-![image|333x499](upload://47AqLTvyFnPyEO3c5tsxqEU6BAh.png) 
+![daoing](/images/daoing.png) 
 
 ## 8. Ability to have “recipient” dropdowns that autocomplete a human-readbale name.
 * While progress has been made on identity providers (https://forum.aragon.org/t/identity-providers-resolving-addresses-to-identities-in-aragon/631), I do not see this initiative as complete until we can resolve how to resolve the the identities in recipient dropdowns. I imagine this will require an additional component like `RecipientAutocomplete` instead of `DropDown` which has logic that interfaces with the Identity Provider API.
